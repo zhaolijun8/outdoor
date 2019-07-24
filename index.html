@@ -22,7 +22,7 @@
         .desc{margin-right:35px;display:flex;flex-direction: column;justify-content:space-between; }
 
         .price{color:#FF9D27;font-size:35px;}
-        .price span{font-size:20px;padding-right:10px;}
+        .price .fh{font-size:20px;padding-right:10px;}
         .desc .name{font-size:30px;overflow: hidden;  text-overflow: ellipsis;  display: -webkit-box;  -webkit-box-orient: vertical;
             }
         .ewm-img{flex:0 0 175px}
@@ -45,8 +45,8 @@
                 </header>
                 <section class="neirong">
                     <div class="desc">
-                        <div class="name" v-cloak>{{name}}</div>
-                        <div class="price" v-cloak><span>￥</span>{{price}}</div>
+                        <div class="name" v-text="name"></div>
+                        <div class="price"><span class="fh">￥</span><span v-text="price"></span></div>
                     </div>
                     <div class="ewm-img">
                         <img :src="ewm" width="100%" alt="">
