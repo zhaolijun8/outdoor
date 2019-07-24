@@ -38,21 +38,6 @@
     <div id="outDoor" class="contain">
         <h2>图文海报</h2>
             <div class="main">
-            <!-- <div class="share-img">
-                <header>
-                    <img src="ht.jpg" width="100%" height="237" alt="">
-                    <div class="keyword">海坨<br>山谷</div>
-                </header>
-                <section class="neirong">
-                    <div class="desc">
-                        <div class="name">7月27/28日，瑞士小镇-童话世界-网红圣地-处处都是极致体验</div>
-                        <div class="price"><span>￥</span>98</div>
-                    </div>
-                    <div class="ewm-img">
-                        <img src="ht.png" width="100%" alt="">
-                    </div>
-                </section>
-            </div> -->
             <div class="share-img">
                 <header>
                     <img :src="pic" width="100%" height="237" alt="">
@@ -60,8 +45,8 @@
                 </header>
                 <section class="neirong">
                     <div class="desc">
-                        <div class="name">{{name}}</div>
-                        <div class="price"><span>￥</span>{{price}}</div>
+                        <div class="name" v-cloak>{{name}}</div>
+                        <div class="price" v-cloak><span>￥</span>{{price}}</div>
                     </div>
                     <div class="ewm-img">
                         <img :src="ewm" width="100%" alt="">
