@@ -41,7 +41,7 @@
             <div class="share-img">
                 <header>
                     <img :src="pic" width="100%" height="237" alt="">
-                    <div class="keyword" v-html="keyword"></div>
+                    <div class="keyword" v-html="keyword" :style="{fontSize:fontSize+'px'}"></div>
                 </header>
                 <section class="neirong">
                     <div class="desc">
@@ -57,6 +57,7 @@
                 <div class="tt">内容编辑区：</div>
                 <div class="line"><span>展示图：</span><input type="text" v-model="pic"></div>
                 <div class="line"><span>关键字：</span><input type="text" v-model="keyword"></div>
+                <div class="line"><span>关键字字号：</span><input type="text" v-model="fontSize"></div>
                 <div class="line"><span>标题：</span><input type="text" v-model="name"></div>
                 <div class="line"><span>价格：</span><input type="text" v-model="price"></div>
                 <div class="line"><span>二维码：</span><input type="text" v-model="ewm"></div>
@@ -77,6 +78,7 @@
             data:{
                 pic:'ht.jpg',
                 keyword:'海坨<br>山谷',
+                fontSize:42
                 name:'7月27/28日，瑞士小镇-童话世界-网红圣地-处处都是极致体验',
                 price:'98',
                 ewm:'hw.png',
